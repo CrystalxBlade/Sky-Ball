@@ -3,26 +3,38 @@ using UnityEngine;
 public class Ball : MonoBehaviour
 {
     [SerializeField] float moveSpeed;
+    [SerializeField] Transform cam;
+
     float xInput, zInput;
-    Rigidbody rb; 
+    Rigidbody rb;
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         xInput = Input.GetAxis("Horizontal");
         zInput = Input.GetAxis("Vertical");
     }
+
     void FixedUpdate()
     {
         Move();
     }
+
     void Move()
     {
-        rb.AddForce(new Vector3(xInput, 0, zInput) * moveSpeed);
-    }
+        Vector3 forward = cam.forward;
+        Vector3 right = cam.right;
 
+        forward.y = 0;
+        right.y = 0;
+
+        //Vector3 moveDirection = forward * zInput + right * xInput;
+        Vector3 moveDirection = (forward * zInput + right * xInput).normalized;
+
+        rb.AddForce(moveDirection * moveSpeed);
+    }
 }
