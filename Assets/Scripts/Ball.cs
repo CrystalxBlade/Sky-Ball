@@ -9,11 +9,19 @@ public class Ball : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = false;
     }
     void Update()
     {
         xInput = Input.GetAxis("Horizontal");
         zInput = Input.GetAxis("Vertical");
+
+        if(Input.GetKey(KeyCode.Escape))
+        {
+            Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+        }
     }
     void FixedUpdate()
     {
