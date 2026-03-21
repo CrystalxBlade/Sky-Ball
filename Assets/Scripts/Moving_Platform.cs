@@ -2,13 +2,13 @@ using UnityEngine;
 
 public class Moving_Platform : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    [SerializeField] Transform pointA, pointB;
+    [SerializeField] float _moveSpeed;
+    Transform _transform;
     void Start()
     {
-        
+        _transform = pointB;
     }
-
-    // Update is called once per frame
     void Update()
     {
         
