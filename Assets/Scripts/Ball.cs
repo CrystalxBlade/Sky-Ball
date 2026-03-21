@@ -5,8 +5,7 @@ public class Ball : MonoBehaviour
     [SerializeField] float moveSpeed, jumpForce;
     [SerializeField] Transform cam;
     Rigidbody rb;
-    bool isGrounded;
-    bool jumpRequest;
+    bool isGrounded = false;
     float xInput, zInput;
     void Start()
     {
@@ -24,19 +23,15 @@ public class Ball : MonoBehaviour
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
         }
-        if(Input.GetButtonDown("Jump"))
+        if(Input.GetButtonDown("Jump") && isGrounded)
         {
-            isGrounded = true;
+            Jump();
+            isGrounded = false;
         }
     }
     void FixedUpdate()
     {
         Move();
-
-        if(isGrounded)
-        {
-            Jump();
-        }
     }
     void Move()
     {
@@ -53,5 +48,12 @@ public class Ball : MonoBehaviour
     void Jump()
     {
         rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+    }
+    void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.CompareTag("ground"))
+        {
+            isGrounded = true;
+        }
     }
 }

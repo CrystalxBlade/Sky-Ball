@@ -11,13 +11,16 @@ public class Platform_Attach : MonoBehaviour
         _transform = transform;
         lastPos = _transform.position;
     }
-    void Update()
+    void LateUpdate()
     {
-        for(int i = 1; i < rigidbodies.Count; i++)
+        if(rigidbodies.Count > 0)
         {
-            Rigidbody rb =  rigidbodies[i];
-            Vector3 velocity = transform.position - lastPos;
-            rb.transform.Translate(velocity, _transform);
+            for(int i = 0; i < rigidbodies.Count; i++)
+            {
+                Rigidbody rb =  rigidbodies[i];
+                Vector3 velocity = transform.position - lastPos;
+                rb.transform.Translate(velocity, _transform);
+            }
         }
         lastPos = transform.position;
     }
