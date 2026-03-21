@@ -2,9 +2,11 @@ using UnityEngine;
 
 public class Ball : MonoBehaviour
 {
-    [SerializeField] float moveSpeed;
+    [SerializeField] float moveSpeed, jumpForce;
     [SerializeField] Transform cam;
     Rigidbody rb;
+    bool isGrounded;
+    bool jumpRequest;
     float xInput, zInput;
     void Start()
     {
@@ -17,15 +19,24 @@ public class Ball : MonoBehaviour
         xInput = Input.GetAxis("Horizontal");
         zInput = Input.GetAxis("Vertical");
 
-        if(Input.GetKey(KeyCode.Escape))
+        if(Input.GetKeyDown(KeyCode.Escape))
         {
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
+        }
+        if(Input.GetButtonDown("Jump"))
+        {
+            isGrounded = true;
         }
     }
     void FixedUpdate()
     {
         Move();
+
+        if(isGrounded)
+        {
+            Jump();
+        }
     }
     void Move()
     {
@@ -38,5 +49,9 @@ public class Ball : MonoBehaviour
         Vector3 moveDirection = (forward * zInput + right * xInput).normalized;
 
         rb.AddForce(moveDirection * moveSpeed);
+    }
+    void Jump()
+    {
+        rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
     }
 }

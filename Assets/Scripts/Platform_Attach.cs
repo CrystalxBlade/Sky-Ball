@@ -3,14 +3,23 @@ using UnityEngine;
 
 public class Platform_Attach : MonoBehaviour
 {
-    List<Rigidbody> rigidbodies = new List<Rigidbody>();
+    public List<Rigidbody> rigidbodies = new List<Rigidbody>();
+    public Vector3 lastPos;
+    Transform _transform;
     void Start()
     {
-        
+        _transform = transform;
+        lastPos = _transform.position;
     }
     void Update()
     {
-        
+        for(int i = 1; i < rigidbodies.Count; i++)
+        {
+            Rigidbody rb =  rigidbodies[i];
+            Vector3 velocity = transform.position - lastPos;
+            rb.transform.Translate(velocity, _transform);
+        }
+        lastPos = transform.position;
     }
     void OnCollisionEnter(Collision c)
     {
@@ -30,12 +39,12 @@ public class Platform_Attach : MonoBehaviour
     }
     void Add(Rigidbody rb)
     {
-        if(rb == null)
+        if(!rigidbodies.Contains(rb))
         rigidbodies.Add(rb);
     }
     void Remove(Rigidbody rb)
     {
-        if(rb != null)
+        if(rigidbodies.Contains(rb))
         rigidbodies.Remove(rb);
     }
 }
