@@ -128,7 +128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5745169a8a7e3a4d98ef86b517bd6b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Rotate
-  rotateAxis: {x: 0, y: 1, z: 0}
+  rotateAxis: {x: 0, y: 0.1, z: 0}
 --- !u!1 &4961988205479718679
 GameObject:
   m_ObjectHideFlags: 0
