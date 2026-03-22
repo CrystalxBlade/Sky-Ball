@@ -4,15 +4,17 @@ public class Ball : MonoBehaviour
 {
     [SerializeField] float moveSpeed, jumpForce;
     [SerializeField] Transform cam;
-
     Rigidbody rb;
     float xInput, zInput;
     int groundContacts = 0;
     bool jumpRequest = false;
-
+    bool cursorRequest;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = false;
+        cursorRequest = false;
     }
 
     void Update()
@@ -23,6 +25,22 @@ public class Ball : MonoBehaviour
         if (Input.GetButtonDown("Jump") && groundContacts > 0)
         {
             jumpRequest = true;
+        }
+
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            cursorRequest = !cursorRequest;
+            
+            if(cursorRequest)
+            {
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
+            }
+            else
+            {
+                Cursor.lockState = CursorLockMode.Locked;
+                Cursor.visible = false;
+            }
         }
     }
 
