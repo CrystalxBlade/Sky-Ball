@@ -15,11 +15,12 @@ public class Platform_Attach : MonoBehaviour
     {
         if(rigidbodies.Count > 0)
         {
+            Vector3 velocity = transform.position - lastPos;
+            
             for(int i = 0; i < rigidbodies.Count; i++)
             {
                 Rigidbody rb =  rigidbodies[i];
-                Vector3 velocity = transform.position - lastPos;
-                rb.transform.Translate(velocity, _transform);
+                rb.transform.Translate(velocity, Space.World);
             }
         }
         lastPos = transform.position;
