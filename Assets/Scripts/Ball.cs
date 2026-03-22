@@ -4,35 +4,39 @@ public class Ball : MonoBehaviour
 {
     [SerializeField] float moveSpeed, jumpForce;
     [SerializeField] Transform cam;
+
     Rigidbody rb;
-    bool isGrounded = false;
     float xInput, zInput;
+    int groundContacts = 0;
+    bool jumpRequest = false;
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        Cursor.lockState = CursorLockMode.None;
-        Cursor.visible = false;
     }
+
     void Update()
     {
         xInput = Input.GetAxis("Horizontal");
         zInput = Input.GetAxis("Vertical");
 
-        if(Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetButtonDown("Jump") && groundContacts > 0)
         {
-            Cursor.lockState = CursorLockMode.None;
-            Cursor.visible = true;
-        }
-        if(Input.GetButtonDown("Jump") && isGrounded)
-        {
-            Jump();
-            isGrounded = false;
+            jumpRequest = true;
         }
     }
+
     void FixedUpdate()
     {
         Move();
+
+        if (jumpRequest)
+        {
+            Jump();
+            jumpRequest = false;
+        }
     }
+
     void Move()
     {
         Vector3 forward = cam.forward;
@@ -41,19 +45,33 @@ public class Ball : MonoBehaviour
         forward.y = 0;
         right.y = 0;
 
-        Vector3 moveDirection = (forward * zInput + right * xInput).normalized;
+        forward.Normalize();
+        right.Normalize();
 
-        rb.AddForce(moveDirection * moveSpeed);
+        Vector3 moveDirection = (forward * zInput + right * xInput).normalized;
+        rb.AddForce(moveDirection * moveSpeed, ForceMode.Acceleration);
     }
+
     void Jump()
     {
         rb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
     }
+
     void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.CompareTag("ground"))
+        if (collision.gameObject.CompareTag("ground"))
         {
-            isGrounded = true;
+            groundContacts++;
+        }
+    }
+
+    void OnCollisionExit(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("ground"))
+        {
+            groundContacts--;
+            if (groundContacts < 0)
+                groundContacts = 0;
         }
     }
 }
