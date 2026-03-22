@@ -427,7 +427,7 @@ Transform:
   m_GameObject: {fileID: 56161897}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -21.51}
+  m_LocalPosition: {x: 0, y: -0.315, z: -21.35}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -783,7 +783,7 @@ Transform:
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
   m_LocalRotation: {x: 0.26882127, y: 0.00000003062686, z: -0.000000008547795, w: 0.9631901}
-  m_LocalPosition: {x: 0.835, y: 5.403982, z: -15.848827}
+  m_LocalPosition: {x: 122.59, y: 5.813982, z: 101.59117}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1617,7 +1617,7 @@ Transform:
   m_GameObject: {fileID: 598076803}
   serializedVersion: 2
   m_LocalRotation: {x: 0.26882124, y: 0.00000003062686, z: -0.0000000085477945, w: 0.96319014}
-  m_LocalPosition: {x: 0.835, y: 5.403982, z: -15.848827}
+  m_LocalPosition: {x: 122.59, y: 5.813982, z: 101.59117}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2050,7 +2050,7 @@ Transform:
   m_GameObject: {fileID: 813109090}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.835, y: 1.7, z: -9.73}
+  m_LocalPosition: {x: 122.59, y: 2.11, z: 107.71}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2965,7 +2965,7 @@ Transform:
   m_GameObject: {fileID: 1353373489}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 43.94}
+  m_LocalPosition: {x: 0, y: -0.315, z: 44.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3461,8 +3461,8 @@ Transform:
   m_GameObject: {fileID: 1624083432}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.6125183, y: -0.375, z: -21.321297}
-  m_LocalScale: {x: 7, y: 1, z: 7}
+  m_LocalPosition: {x: -0.6125183, y: -0.69, z: -21.321297}
+  m_LocalScale: {x: 8, y: 1, z: 7}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1271016274}
@@ -3482,6 +3482,7 @@ MonoBehaviour:
   pointA: {fileID: 56161898}
   pointB: {fileID: 1353373490}
   _moveSpeed: 6
+  waitTime: 3
 --- !u!65 &1624083435
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -1,3 +1,4 @@
+using NUnit.Framework;
 using UnityEngine;
 
 public class Moving_Platform : MonoBehaviour
@@ -25,16 +26,14 @@ public class Moving_Platform : MonoBehaviour
 
                 target =  target ==  pointA ? pointB : pointA;
             }
+            return;
         }
 
         transform.position = Vector3.MoveTowards(transform.position, target.position, _moveSpeed * Time.deltaTime);
 
         if(Vector3.Distance(transform.position, target.position) < 0.01f)
         {
-            if(target == pointA)
-                target = pointB;
-            else
-                target = pointA;
+            isWaiting = true;
         }  
     }
 }
