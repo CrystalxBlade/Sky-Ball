@@ -82,7 +82,6 @@ public class Ball : MonoBehaviour
             groundContacts++;
         }
     }
-
     void OnCollisionExit(Collision collision)
     {
         if (collision.gameObject.CompareTag("ground"))
