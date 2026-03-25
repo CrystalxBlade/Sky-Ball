@@ -26,6 +26,7 @@ public class LevelManager : MonoBehaviour
         if(other.gameObject.CompareTag("Finish"))
         {
             Destroy(other.gameObject);
+            Invoke("NextLvl", 4);
         }
     }
 }
