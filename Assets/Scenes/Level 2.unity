@@ -10104,7 +10104,7 @@ Transform:
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
   m_LocalRotation: {x: 0.27123314, y: -0.00000004056692, z: 0.000000011431623, w: 0.9625137}
-  m_LocalPosition: {x: 0.97, y: 28.839428, z: -16.604431}
+  m_LocalPosition: {x: 0.76, y: 18.229427, z: -16.67443}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -15957,7 +15957,7 @@ Transform:
   m_GameObject: {fileID: 598076803}
   serializedVersion: 2
   m_LocalRotation: {x: 0.27123314, y: -0.00000004056692, z: 0.000000011431624, w: 0.9625137}
-  m_LocalPosition: {x: 0.97, y: 28.839428, z: -16.604431}
+  m_LocalPosition: {x: 0.76, y: 18.229427, z: -16.67443}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -21985,7 +21985,7 @@ Transform:
   m_GameObject: {fileID: 813109090}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.97, y: 25.09, z: -10.48}
+  m_LocalPosition: {x: 0.76, y: 14.48, z: -10.55}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -22004,7 +22004,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LevelManager
   lvlText: {fileID: 735380891}
-  lvl: 0
+  nextLvl: 0
 --- !u!4 &813607006 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7300666370584607915, guid: eecc304f410b53f499fa242661c371bf, type: 3}
