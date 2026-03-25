@@ -4,11 +4,11 @@ using UnityEngine.SceneManagement;
 public class LevelManager : MonoBehaviour
 {
     [SerializeField] TMP_Text lvlText;
-    [SerializeField] int lvl;
+    [SerializeField] int nextLvl;
     void Start()
     {
-        lvl = SceneManager.GetActiveScene().buildIndex;
-        lvlText.text = $" Level {lvl}";
+        nextLvl = SceneManager.GetActiveScene().buildIndex + 1;
+        lvlText.text = $" Level {SceneManager.GetActiveScene().buildIndex}";
     }
     void Update()
     {
@@ -19,7 +19,7 @@ public class LevelManager : MonoBehaviour
     }
     void NextLvl()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(nextLvl);
     }
     private void OnCollisionEnter(Collision other)
     {
