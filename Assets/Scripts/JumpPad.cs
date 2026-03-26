@@ -2,15 +2,12 @@ using UnityEngine;
 
 public class JumpPad : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [SerializeField] float jumpForce;
+    private void OnCollisionEnter(Collision collision)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if(collision.gameObject.TryGetComponent(out Rigidbody rb))
+        {
+            rb.AddForce(transform.up * jumpForce);
+        }
     }
 }
