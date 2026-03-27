@@ -49,9 +49,6 @@
                 <mxCell id="24" value="&lt;h1&gt;4&lt;/h1&gt;" style="shape=offPageConnector;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#4D4D4D);fontSize=20;" parent="1" vertex="1">
                     <mxGeometry x="275" y="480" width="65" height="80" as="geometry"/>
                 </mxCell>
-                <mxCell id="25" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#FFCC99);" parent="1" vertex="1">
-                    <mxGeometry x="693.75" y="905" width="120" height="50" as="geometry"/>
-                </mxCell>
                 <mxCell id="26" value="" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=light-dark(#FFFFFF,#FFCC99);" parent="1" vertex="1">
                     <mxGeometry x="275" y="905" width="80" height="80" as="geometry"/>
                 </mxCell>
@@ -76,17 +73,14 @@
                 <mxCell id="33" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#FFCC99);" parent="1" vertex="1">
                     <mxGeometry x="951.25" y="815" width="120" height="50" as="geometry"/>
                 </mxCell>
-                <mxCell id="34" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#FFCC99);" parent="1" vertex="1">
-                    <mxGeometry x="751.25" y="815" width="120" height="50" as="geometry"/>
-                </mxCell>
                 <mxCell id="35" value="&lt;font style=&quot;font-size: 25px; color: light-dark(rgb(0, 0, 0), rgb(153, 51, 255));&quot;&gt;END&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#FFCC99);" parent="1" vertex="1">
-                    <mxGeometry x="561.25" y="802.5" width="80" height="80" as="geometry"/>
+                    <mxGeometry x="1067.5" y="920" width="80" height="80" as="geometry"/>
                 </mxCell>
                 <mxCell id="36" value="" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=light-dark(#FFFFFF,#66FFB3);" parent="1" vertex="1">
-                    <mxGeometry x="641.25" y="812.5" width="100" height="60" as="geometry"/>
+                    <mxGeometry x="360" y="1020" width="100" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="38" value="" style="shape=tape;whiteSpace=wrap;html=1;rotation=90;fillColor=light-dark(#FFFFFF,#FF9933);" parent="1" vertex="1">
-                    <mxGeometry x="1257.5" y="900" width="100" height="55" as="geometry"/>
+                <mxCell id="38" value="" style="shape=tape;whiteSpace=wrap;html=1;rotation=0;fillColor=light-dark(#FFFFFF,#FF9933);" parent="1" vertex="1">
+                    <mxGeometry x="641.25" y="880" width="100" height="55" as="geometry"/>
                 </mxCell>
                 <mxCell id="39" value="" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=light-dark(#FFFFFF,#FFCC99);" parent="1" vertex="1">
                     <mxGeometry x="267.5" y="560" width="80" height="80" as="geometry"/>
@@ -110,7 +104,7 @@
                     <mxGeometry x="737.5" y="222.5" width="80" height="80" as="geometry"/>
                 </mxCell>
                 <mxCell id="48" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#CCCCCC);rotation=-180;" parent="1" vertex="1">
-                    <mxGeometry x="893.75" y="915" width="120" height="40" as="geometry"/>
+                    <mxGeometry x="460" y="1030" width="120" height="40" as="geometry"/>
                 </mxCell>
                 <mxCell id="49" value="" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fixedSize=1;fillColor=light-dark(#FFFFFF,#66FFB3);" vertex="1" parent="1">
                     <mxGeometry x="1030" y="445" width="100" height="60" as="geometry"/>
@@ -142,8 +136,17 @@
                 <mxCell id="76" value="" style="shape=tapeData;whiteSpace=wrap;html=1;perimeter=ellipsePerimeter;fontColor=light-dark(#000000,#999999);strokeColor=light-dark(#000000,#808080);fillColor=light-dark(#FFFFFF,#808080);" vertex="1" parent="1">
                     <mxGeometry x="267.5" y="307.5" width="80" height="80" as="geometry"/>
                 </mxCell>
-                <mxCell id="78" value="UP" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=light-dark(#FFFFFF,#FFCC99);fontSize=25;fontColor=light-dark(#000000,#6666FF);" vertex="1" parent="1">
+                <mxCell id="78" value="&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=light-dark(#FFFFFF,#FFCC99);fontSize=25;fontColor=light-dark(#000000,#6666FF);" vertex="1" parent="1">
                     <mxGeometry x="275" y="1010" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="79" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#FFFFFF,#CCCCCC);rotation=90;" vertex="1" parent="1">
+                    <mxGeometry x="541.25" y="990" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="80" value="&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=light-dark(#FFFFFF,#FFCC99);fontSize=25;fontColor=light-dark(#000000,#6666FF);" vertex="1" parent="1">
+                    <mxGeometry x="561.25" y="867.5" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="82" value="&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=light-dark(#FFFFFF,#FFCC99);fontSize=25;fontColor=light-dark(#000000,#6666FF);" vertex="1" parent="1">
+                    <mxGeometry x="741.25" y="865" width="80" height="80" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
