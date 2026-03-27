@@ -2,10 +2,10 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class Level_Select : MonoBehaviour
 {
-    [SerializeField] float lvl;
+    [SerializeField] int lvlNo;
 
-    public void LoadLvl(int lvl)
+    public void LoadLvl()
     {
-        SceneManager.LoadScene(lvl);
+        SceneManager.LoadScene(lvlNo);
     }
 }
