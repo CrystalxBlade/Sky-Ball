@@ -27,6 +27,11 @@ public class LevelManager : MonoBehaviour
         {
             Destroy(other.gameObject);
             Invoke("NextLvl", 4);
+
+            if(nextLvl > PlayerPrefs.GetInt("Level"))
+            {
+                PlayerPrefs.SetInt("Level", nextLvl);
+            }
         }
     }
 }
