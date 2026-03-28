@@ -4,7 +4,8 @@ public class Home : MonoBehaviour
 {
     public void Play()
     {
-        
+        int lvl = PlayerPrefs.GetInt("Level");
+        SceneManager.LoadScene(lvl);
     }
     public void Levels()
     {
