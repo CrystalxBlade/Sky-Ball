@@ -11,6 +11,10 @@ public class Home : MonoBehaviour
     {
         SceneManager.LoadScene("Levels");
     }
+    public void Reset()
+    {
+        PlayerPrefs.DeleteAll();
+    }
     public void Quit()
     {
         Application.Quit();

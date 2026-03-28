@@ -5,6 +5,10 @@ public class Level_Select : MonoBehaviour
 {
     [SerializeField] int lvlNo;
 
+    void Update()
+    {
+        
+    }
     void Start()
     {
         if(lvlNo <= PlayerPrefs.GetInt("Level", 1))
