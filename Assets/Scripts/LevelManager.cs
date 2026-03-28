@@ -1,11 +1,13 @@
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 public class LevelManager : MonoBehaviour
 {
     [SerializeField] TMP_Text lvlText;
     [SerializeField] int nextLvl;
     [SerializeField] GameObject pauseScreen;
+    bool pause;
     void Start()
     {
         nextLvl = SceneManager.GetActiveScene().buildIndex + 1;
@@ -15,8 +17,19 @@ public class LevelManager : MonoBehaviour
     {
         if(transform.position.y < -10)
         {
+            Time.timeScale = 1f;
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            TogglePause();
+        }
+    }
+    void TogglePause()
+    {
+        pause = !pause;
+        pauseScreen.SetActive(pause);
+        Time.timeScale = pause ? 0f : 1f;
     }
     void NextLvl()
     {
