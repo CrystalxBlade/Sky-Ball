@@ -8,7 +8,7 @@ public class Home : MonoBehaviour
     }
     public void Levels()
     {
-        
+        SceneManager.LoadScene("Levels");
     }
     public void Quit()
     {
