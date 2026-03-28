@@ -5,6 +5,7 @@ public class LevelManager : MonoBehaviour
 {
     [SerializeField] TMP_Text lvlText;
     [SerializeField] int nextLvl;
+    [SerializeField] GameObject pauseScreen;
     void Start()
     {
         nextLvl = SceneManager.GetActiveScene().buildIndex + 1;
