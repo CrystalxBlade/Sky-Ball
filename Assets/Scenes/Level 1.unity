@@ -2429,9 +2429,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 340062474}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a35e1653f43018744a2ce429a7f58807, type: 3}
+  m_Script: {fileID: 11500000, guid: eadd715d464ff7f4da0250a9f55e2fb0, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Home
+  m_EditorClassIdentifier: Assembly-CSharp::Pause
 --- !u!1001 &341708457
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13044,7 +13044,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 340062478}
-        m_TargetAssemblyTypeName: Home, Assembly-CSharp
+        m_TargetAssemblyTypeName: Pause, Assembly-CSharp
         m_MethodName: Quit
         m_Mode: 1
         m_Arguments:
@@ -17035,7 +17035,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 340062478}
-        m_TargetAssemblyTypeName: Home, Assembly-CSharp
+        m_TargetAssemblyTypeName: Pause, Assembly-CSharp
         m_MethodName: Menu
         m_Mode: 1
         m_Arguments:

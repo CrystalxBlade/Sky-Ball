@@ -22917,8 +22917,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1651651968}
-        m_TargetAssemblyTypeName: Home, Assembly-CSharp
+      - m_Target: {fileID: 1651651972}
+        m_TargetAssemblyTypeName: Pause, Assembly-CSharp
         m_MethodName: Menu
         m_Mode: 1
         m_Arguments:
@@ -54395,7 +54395,7 @@ GameObject:
   - component: {fileID: 1651651971}
   - component: {fileID: 1651651970}
   - component: {fileID: 1651651969}
-  - component: {fileID: 1651651968}
+  - component: {fileID: 1651651972}
   m_Layer: 5
   m_Name: PauseScreen
   m_TagString: Untagged
@@ -54403,18 +54403,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!114 &1651651968
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1651651967}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a35e1653f43018744a2ce429a7f58807, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Home
 --- !u!114 &1651651969
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -54475,6 +54463,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 1679.2719, y: 842.8196}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1651651972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1651651967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eadd715d464ff7f4da0250a9f55e2fb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Pause
 --- !u!4 &1658599034 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7309496125056562253, guid: e68c28b750a11464987de6139aca4bf7, type: 3}
@@ -61712,8 +61712,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1651651968}
-        m_TargetAssemblyTypeName: Home, Assembly-CSharp
+      - m_Target: {fileID: 1651651972}
+        m_TargetAssemblyTypeName: Pause, Assembly-CSharp
         m_MethodName: Quit
         m_Mode: 1
         m_Arguments:

@@ -9351,7 +9351,7 @@ GameObject:
   - component: {fileID: 220540054}
   - component: {fileID: 220540057}
   - component: {fileID: 220540056}
-  - component: {fileID: 220540055}
+  - component: {fileID: 220540058}
   m_Layer: 5
   m_Name: PauseScreen
   m_TagString: Untagged
@@ -9381,18 +9381,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 1679.2719, y: 842.8196}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &220540055
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 220540053}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a35e1653f43018744a2ce429a7f58807, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Home
 --- !u!114 &220540056
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9431,6 +9419,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 220540053}
   m_CullTransparentMesh: 1
+--- !u!114 &220540058
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 220540053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eadd715d464ff7f4da0250a9f55e2fb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Pause
 --- !u!43 &221396505
 Mesh:
   m_ObjectHideFlags: 0
@@ -19199,8 +19199,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 220540055}
-        m_TargetAssemblyTypeName: Home, Assembly-CSharp
+      - m_Target: {fileID: 220540058}
+        m_TargetAssemblyTypeName: Pause, Assembly-CSharp
         m_MethodName: Menu
         m_Mode: 1
         m_Arguments:
@@ -38890,8 +38890,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 220540055}
-        m_TargetAssemblyTypeName: Home, Assembly-CSharp
+      - m_Target: {fileID: 220540058}
+        m_TargetAssemblyTypeName: Pause, Assembly-CSharp
         m_MethodName: Quit
         m_Mode: 1
         m_Arguments:
