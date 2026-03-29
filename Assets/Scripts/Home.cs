@@ -24,4 +24,10 @@ public class Home : MonoBehaviour
         Time.timeScale = 1f;
         SceneManager.LoadScene(0);
     }
+
+    void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.Escape))
+        SceneManager.LoadScene(0);
+    }
 }
