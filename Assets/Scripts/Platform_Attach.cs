@@ -6,49 +6,56 @@ public class Platform_Attach : MonoBehaviour
     public List<Rigidbody> rigidbodies = new List<Rigidbody>();
     public Vector3 lastPos;
     Transform _transform;
+
     void Start()
     {
         _transform = transform;
         lastPos = _transform.position;
     }
+
     void LateUpdate()
     {
-        if(rigidbodies.Count > 0)
+        if (rigidbodies.Count > 0)
         {
             Vector3 velocity = transform.position - lastPos;
-            
-            for(int i = 0; i < rigidbodies.Count; i++)
+
+            for (int i = 0; i < rigidbodies.Count; i++)
             {
-                Rigidbody rb =  rigidbodies[i];
+                Rigidbody rb = rigidbodies[i];
                 rb.transform.Translate(velocity, Space.World);
             }
         }
-        lastPos = transform.position;
+
+        lastPos = _transform.position;
     }
+
     void OnCollisionEnter(Collision c)
     {
         Rigidbody rb = c.collider.GetComponent<Rigidbody>();
-        if(rb != null)
+        if (rb != null)
         {
             Add(rb);
         }
     }
+
     void OnCollisionExit(Collision c)
     {
         Rigidbody rb = c.collider.GetComponent<Rigidbody>();
-        if(rb != null)
+        if (rb != null)
         {
             Remove(rb);
         }
     }
+
     void Add(Rigidbody rb)
     {
-        if(!rigidbodies.Contains(rb))
-        rigidbodies.Add(rb);
+        if (!rigidbodies.Contains(rb))
+            rigidbodies.Add(rb);
     }
+
     void Remove(Rigidbody rb)
     {
-        if(rigidbodies.Contains(rb))
-        rigidbodies.Remove(rb);
+        if (rigidbodies.Contains(rb))
+            rigidbodies.Remove(rb);
     }
 }

@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class Moving_Platform : MonoBehaviour
 {
-    [SerializeField] Transform pointA, pointB;
+   [SerializeField] Transform pointA, pointB;
     [SerializeField] float _moveSpeed;
     Transform target;
     [SerializeField] float waitTime;
