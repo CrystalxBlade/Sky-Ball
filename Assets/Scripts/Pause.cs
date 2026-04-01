@@ -5,7 +5,7 @@ public class Pause : MonoBehaviour
     public void Menu()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(1);
     }
     public void Quit()
     {

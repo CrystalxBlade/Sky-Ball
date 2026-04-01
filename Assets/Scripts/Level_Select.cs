@@ -8,7 +8,7 @@ public class Level_Select : MonoBehaviour
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.Escape))
-        SceneManager.LoadScene(0);   
+        SceneManager.LoadScene(1);   
     }
     void Start()
     {
