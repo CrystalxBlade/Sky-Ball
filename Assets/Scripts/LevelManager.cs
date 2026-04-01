@@ -40,7 +40,7 @@ public class LevelManager : MonoBehaviour
         if(other.gameObject.CompareTag("Finish"))
         {
             Destroy(other.gameObject);
-            Invoke("NextLvl", 4);
+            Invoke("NextLvl", 2);
 
             if(nextLvl > PlayerPrefs.GetInt("Level"))
             {

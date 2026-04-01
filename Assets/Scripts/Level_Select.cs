@@ -12,7 +12,7 @@ public class Level_Select : MonoBehaviour
     }
     void Start()
     {
-        if(lvlNo <= PlayerPrefs.GetInt("Level", 1))
+        if(lvlNo <= PlayerPrefs.GetInt("Level", 2))
         {
             gameObject.GetComponent<Button>().interactable = true;
         }
