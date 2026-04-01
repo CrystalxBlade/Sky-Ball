@@ -11,7 +11,7 @@ public class LevelManager : MonoBehaviour
     void Start()
     {
         nextLvl = SceneManager.GetActiveScene().buildIndex + 1;
-        lvlText.text = $" Level {SceneManager.GetActiveScene().buildIndex}";
+        lvlText.text = $" Level {SceneManager.GetActiveScene().buildIndex - 1}";
     }
     void Update()
     {
