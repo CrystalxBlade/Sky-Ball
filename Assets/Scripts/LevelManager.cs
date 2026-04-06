@@ -47,5 +47,9 @@ public class LevelManager : MonoBehaviour
                 PlayerPrefs.SetInt("Level", nextLvl);
             }
         }
+        if(other.gameObject.CompareTag("Last"))
+        {
+            SceneManager.LoadScene("Credit");
+        }
     }
 }
