@@ -697,6 +697,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 2077762509}
+    - target: {fileID: 4496833270886757309, guid: edc220b8536327142bcdb5ad22410e93, type: 3}
+      propertyPath: rotateAxis.y
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 4605511882912831017, guid: edc220b8536327142bcdb5ad22410e93, type: 3}
       propertyPath: m_LocalScale.y
       value: 1.2657032
@@ -2834,6 +2838,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1207918968}
+    - target: {fileID: 4496833270886757309, guid: edc220b8536327142bcdb5ad22410e93, type: 3}
+      propertyPath: rotateAxis.y
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 4605511882912831017, guid: edc220b8536327142bcdb5ad22410e93, type: 3}
       propertyPath: m_LocalScale.y
       value: 1.2657032
@@ -5261,6 +5269,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1207918968}
+    - target: {fileID: 4496833270886757309, guid: edc220b8536327142bcdb5ad22410e93, type: 3}
+      propertyPath: rotateAxis.y
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 4605511882912831017, guid: edc220b8536327142bcdb5ad22410e93, type: 3}
       propertyPath: m_LocalScale.y
       value: 1.2657032
@@ -14800,6 +14812,10 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 11654143}
+    - target: {fileID: 4496833270886757309, guid: edc220b8536327142bcdb5ad22410e93, type: 3}
+      propertyPath: rotateAxis.y
+      value: -50
+      objectReference: {fileID: 0}
     - target: {fileID: 4605511882912831017, guid: edc220b8536327142bcdb5ad22410e93, type: 3}
       propertyPath: m_LocalScale.y
       value: 1.2657032
