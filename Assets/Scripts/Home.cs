@@ -4,8 +4,15 @@ public class Home : MonoBehaviour
 {
     public void Play()
     {
-        int lvl = PlayerPrefs.GetInt("Level",2);
-        SceneManager.LoadScene(lvl);
+        if(2 <= PlayerPrefs.GetInt("Level") && 5 <= PlayerPrefs.GetInt("Level"))
+        {
+            int lvl = PlayerPrefs.GetInt("Level",2);
+            SceneManager.LoadScene(lvl);
+        }
+        else if (6 >= PlayerPrefs.GetInt("Level"))
+        {
+            SceneManager.LoadScene(6);
+        }
     }
     public void Levels()
     {
