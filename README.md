@@ -48,11 +48,11 @@ The goal is simple:
 2. Extract the ZIP file  
 3. Run `SkyBall.exe`
 
+```
 ⚠️ Windows might act a little dramatic and say “this app looks suspicious” 😤  
 Don’t worry — it’s just because the game is new.
 
 👉 Click **More info → Run anyway** and enjoy!
-```
 ---
 
 ## 📸 Screenshots
