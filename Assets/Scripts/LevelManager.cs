@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 public class LevelManager : MonoBehaviour
@@ -23,6 +24,10 @@ public class LevelManager : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Escape))
         {
             TogglePause();
+        }
+        if(Keyboard.current.lKey.wasPressedThisFrame)
+        {
+            NextLvl();
         }
     }
     void TogglePause()
