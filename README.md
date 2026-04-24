@@ -57,8 +57,11 @@ Don’t worry — it’s just because the game is new.
 
 ## 📸 Screenshots
 
-*(Add your screenshots here later)*
 ![image alt](https://github.com/CrystalxBlade/Sky-Ball/blob/2283c026b6ce695a49c3d08a6bd5257e531e1e71/Menu.png)
+![image alt](https://github.com/CrystalxBlade/Sky-Ball/blob/dc26329eddb82ca57fe5eb7a83cba0e38039c3a7/Clouds.png)
+![image alt](https://github.com/CrystalxBlade/Sky-Ball/blob/dc26329eddb82ca57fe5eb7a83cba0e38039c3a7/ball.png)
+![image alt](https://github.com/CrystalxBlade/Sky-Ball/blob/dc26329eddb82ca57fe5eb7a83cba0e38039c3a7/Sun.png)
+![image alt](https://github.com/CrystalxBlade/Sky-Ball/blob/dc26329eddb82ca57fe5eb7a83cba0e38039c3a7/Galactic.png)
 
 ---
 
