@@ -59,8 +59,6 @@ Don’t worry — it’s just because the game is new.
 
 *(Add your screenshots here later)*
 
-https://github.com/CrystalxBlade/Sky-Ball/blob/main/Menu.png
-
 ---
 
 ## 💡 What I Learned
